@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Visor sql 2005">
+</Property><Property Name="Solution File" Value="C:\OSCAR\PROYECTOS\PROYECTOS NET 2008\VISOR SQL 2008\Programa\Visor sql 2008\Visor sql 2005.sln">
+</Property><Property Name="Date" Value="lunes, 23 de febrero de 2009">
+</Property><Property Name="Time" Value="09:45 a.m.">
+</Property></Properties><Event ErrorLevel="0" Project="Visor sql 2005" Source="Visor sql 2005.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Visor sql 2005" Source="Visor sql 2005.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Visor sql 2005.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Visor sql 2005.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Visor sql 2005" Source="Visor sql 2005.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

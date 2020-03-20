@@ -1,0 +1,127 @@
+﻿namespace Visor_sql_2015.CrearTablas
+{
+    partial class FormFK
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFK));
+            this.label1 = new System.Windows.Forms.Label();
+            this.RBCampo = new System.Windows.Forms.RadioButton();
+            this.RBFk = new System.Windows.Forms.RadioButton();
+            this.BCancelar = new System.Windows.Forms.Button();
+            this.BAceptar = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(66, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(194, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "¿Que desea hacer?";
+            // 
+            // RBCampo
+            // 
+            this.RBCampo.AutoSize = true;
+            this.RBCampo.Checked = true;
+            this.RBCampo.Location = new System.Drawing.Point(16, 65);
+            this.RBCampo.Name = "RBCampo";
+            this.RBCampo.Size = new System.Drawing.Size(160, 17);
+            this.RBCampo.TabIndex = 1;
+            this.RBCampo.TabStop = true;
+            this.RBCampo.Text = "Solamente agregar el campo";
+            this.RBCampo.UseVisualStyleBackColor = true;
+            // 
+            // RBFk
+            // 
+            this.RBFk.AutoSize = true;
+            this.RBFk.Location = new System.Drawing.Point(16, 100);
+            this.RBFk.Name = "RBFk";
+            this.RBFk.Size = new System.Drawing.Size(316, 17);
+            this.RBFk.TabIndex = 2;
+            this.RBFk.Text = "Crear la relación entre tablas y agregar los campos necesarios";
+            this.RBFk.UseVisualStyleBackColor = true;
+            // 
+            // BCancelar
+            // 
+            this.BCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BCancelar.Image")));
+            this.BCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BCancelar.Location = new System.Drawing.Point(223, 136);
+            this.BCancelar.Name = "BCancelar";
+            this.BCancelar.Size = new System.Drawing.Size(85, 40);
+            this.BCancelar.TabIndex = 3;
+            this.BCancelar.Text = "Cancelar";
+            this.BCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BCancelar.UseVisualStyleBackColor = true;
+            // 
+            // BAceptar
+            // 
+            this.BAceptar.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.BAceptar.Image = ((System.Drawing.Image)(resources.GetObject("BAceptar.Image")));
+            this.BAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BAceptar.Location = new System.Drawing.Point(16, 136);
+            this.BAceptar.Name = "BAceptar";
+            this.BAceptar.Size = new System.Drawing.Size(85, 40);
+            this.BAceptar.TabIndex = 4;
+            this.BAceptar.Text = "Aceptar";
+            this.BAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BAceptar.UseVisualStyleBackColor = true;
+            // 
+            // FormFK
+            // 
+            this.AcceptButton = this.BAceptar;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.BCancelar;
+            this.ClientSize = new System.Drawing.Size(348, 188);
+            this.ControlBox = false;
+            this.Controls.Add(this.BAceptar);
+            this.Controls.Add(this.BCancelar);
+            this.Controls.Add(this.RBFk);
+            this.Controls.Add(this.RBCampo);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Name = "FormFK";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Agregar Campo";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton RBCampo;
+        private System.Windows.Forms.RadioButton RBFk;
+        private System.Windows.Forms.Button BCancelar;
+        private System.Windows.Forms.Button BAceptar;
+    }
+}

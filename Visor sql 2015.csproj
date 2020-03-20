@@ -1,0 +1,1289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{614803A3-9D63-4455-B9A8-BC10AF73A723}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Visor_sql_2015</RootNamespace>
+    <AssemblyName>Visor sql 2015</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AnalizadorLexico">
+      <HintPath>Dlls\AnalizadorLexico.dll</HintPath>
+    </Reference>
+    <Reference Include="CBarraProgreso">
+      <HintPath>Dlls\CBarraProgreso.dll</HintPath>
+    </Reference>
+    <Reference Include="Cid_Utilities">
+      <HintPath>Dlls\Cid_Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="DialogConecSQL2005">
+      <HintPath>Dlls\DialogConecSQL2005.dll</HintPath>
+    </Reference>
+    <Reference Include="EfectoExpandible">
+      <HintPath>Dlls\EfectoExpandible.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.TextEditor">
+      <HintPath>Dlls\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE">
+      <HintPath>Dlls\Interop.VBIDE.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MagicLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MagicLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Dlls\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Dlls\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.3.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Dlls\office.dll</HintPath>
+    </Reference>
+    <Reference Include="Opacador">
+      <HintPath>Dlls\Opacador.dll</HintPath>
+    </Reference>
+    <Reference Include="PopupControl">
+      <HintPath>.\PopupControl.dll</HintPath>
+    </Reference>
+    <Reference Include="RichTextBoxPrintCtrl">
+      <HintPath>Dlls\RichTextBoxPrintCtrl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TextColor">
+      <HintPath>Dlls\TextColor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministrarConexiones\AdministradorDeGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministrarConexiones\AdministradorDeGrupos.Designer.cs">
+      <DependentUpon>AdministradorDeGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarConexiones\CInstanciadorDB.cs" />
+    <Compile Include="AdministrarConexiones\FileConecction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdministrarConexiones\FileConecction.Designer.cs">
+      <DependentUpon>FileConecction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarConexiones\FormGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministrarConexiones\FormGrupo.Designer.cs">
+      <DependentUpon>FormGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarConexiones\IControladorConexion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdministrarConexiones\IControladorConexion.Designer.cs">
+      <DependentUpon>IControladorConexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarConexiones\MySQLControladorConexion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdministrarConexiones\MySQLControladorConexion.Designer.cs">
+      <DependentUpon>MySQLControladorConexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarConexiones\SQLControladorConexion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdministrarConexiones\SQLControladorConexion.Designer.cs">
+      <DependentUpon>SQLControladorConexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimatedWaitTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnimatedWaitTextBox.designer.cs">
+      <DependentUpon>AnimatedWaitTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisBienVenidaDelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisBienVenidaDelete.Designer.cs">
+      <DependentUpon>AsisBienVenidaDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisBienVenidaInsert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisBienVenidaInsert.Designer.cs">
+      <DependentUpon>AsisBienVenidaInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisBienVenidaUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisBienVenidaUpdate.Designer.cs">
+      <DependentUpon>AsisBienVenidaUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisForeigKeys.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisForeigKeys.Designer.cs">
+      <DependentUpon>AsisForeigKeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisGenLLave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisGenLLave.Designer.cs">
+      <DependentUpon>AsisGenLLave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisNombreSP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisNombreSP.Designer.cs">
+      <DependentUpon>AsisNombreSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisOrdenamiento.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisOrdenamiento.Designer.cs">
+      <DependentUpon>AsisOrdenamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisResDelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisResDelete.Designer.cs">
+      <DependentUpon>AsisResDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisResInsert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisResInsert.Designer.cs">
+      <DependentUpon>AsisResInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisResSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisResSelect.Designer.cs">
+      <DependentUpon>AsisResSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisResUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisResUpdate.Designer.cs">
+      <DependentUpon>AsisResUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisSelCampos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisSelCampos.Designer.cs">
+      <DependentUpon>AsisSelCampos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisSelParametros.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisSelParametros.Designer.cs">
+      <DependentUpon>AsisSelParametros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisSelTabla.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisSelTabla.Designer.cs">
+      <DependentUpon>AsisSelTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsisSelValFijos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisSelValFijos.Designer.cs">
+      <DependentUpon>AsisSelValFijos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\AsistBaseSP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsistBaseSP.Designer.cs">
+      <DependentUpon>AsistBaseSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\CDato.cs" />
+    <Compile Include="AsistSps\CDelete.cs" />
+    <Compile Include="AsistSps\FormAsistSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistSps\FormAsistSP.Designer.cs">
+      <DependentUpon>FormAsistSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\FormCasos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistSps\FormCasos.Designer.cs">
+      <DependentUpon>FormCasos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\FormForeigKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistSps\FormForeigKey.Designer.cs">
+      <DependentUpon>FormForeigKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\FormNuevoCampo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistSps\FormNuevoCampo.Designer.cs">
+      <DependentUpon>FormNuevoCampo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\FormPropCampo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistSps\FormPropCampo.Designer.cs">
+      <DependentUpon>FormPropCampo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\FormPropCaso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistSps\FormPropCaso.Designer.cs">
+      <DependentUpon>FormPropCaso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\FormPropFiltro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistSps\FormPropFiltro.Designer.cs">
+      <DependentUpon>FormPropFiltro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\FormPropFkDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistSps\FormPropFkDelete.Designer.cs">
+      <DependentUpon>FormPropFkDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\FormpropOrdenamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistSps\FormpropOrdenamiento.Designer.cs">
+      <DependentUpon>FormpropOrdenamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\FormPropParametro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistSps\FormPropParametro.Designer.cs">
+      <DependentUpon>FormPropParametro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\FormPropParametro2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistSps\FormPropParametro2.Designer.cs">
+      <DependentUpon>FormPropParametro2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistSps\FormPropValFijos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistSps\FormPropValFijos.Designer.cs">
+      <DependentUpon>FormPropValFijos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComparadorCadenas\ComparadorCadenas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComparadorCadenas\ComparadorCadenas.Designer.cs">
+      <DependentUpon>ComparadorCadenas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\CCampoRelacion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\CCampoRelacion.Designer.cs">
+      <DependentUpon>CCampoRelacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\CCampoTabla.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\CCampoTabla.Designer.cs">
+      <DependentUpon>CCampoTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\CRelacionTabla.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\CRelacionTabla.Designer.cs">
+      <DependentUpon>CRelacionTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\CTabla.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\CTabla.Designer.cs">
+      <DependentUpon>CTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controladores DB\CNodoTabla.cs" />
+    <Compile Include="Controladores DB\IDataBase.cs" />
+    <Compile Include="Controladores DB\MSSQLServer.cs" />
+    <Compile Include="AsistSps\AsisBienVenidaSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsistSps\AsisBienVenidaSelect.Designer.cs">
+      <DependentUpon>AsisBienVenidaSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controladores DB\MySqlServer.cs" />
+    <Compile Include="CrearTablas\FormCrearTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearTablas\FormCrearTabla.Designer.cs">
+      <DependentUpon>FormCrearTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearTablas\FormEditorTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearTablas\FormEditorTabla.Designer.cs">
+      <DependentUpon>FormEditorTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearTablas\FormFK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearTablas\FormFK.Designer.cs">
+      <DependentUpon>FormFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearTablas\FormPrimaryKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearTablas\FormPrimaryKey.Designer.cs">
+      <DependentUpon>FormPrimaryKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearTablas\FormRelaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearTablas\FormRelaciones.Designer.cs">
+      <DependentUpon>FormRelaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearTablas\FormSeleccionarCampos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearTablas\FormSeleccionarCampos.Designer.cs">
+      <DependentUpon>FormSeleccionarCampos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearTablas\FormPropiedadesCampo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearTablas\FormPropiedadesCampo.Designer.cs">
+      <DependentUpon>FormPropiedadesCampo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearTablas\FormUnicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearTablas\FormUnicos.Designer.cs">
+      <DependentUpon>FormUnicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Diagramas\CDIagramas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Diagramas\CDIagramas.Designer.cs">
+      <DependentUpon>CDIagramas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagramas\COrdenadorTablas.cs" />
+    <Compile Include="Diagramas\CTabla.cs" />
+    <Compile Include="Diagramas\FormDiagrama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagramas\FormDiagrama.Designer.cs">
+      <DependentUpon>FormDiagrama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documentador\FormExportarDocuemntacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentador\FormExportarDocuemntacion.Designer.cs">
+      <DependentUpon>FormExportarDocuemntacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorGenerico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditorGenerico.Designer.cs">
+      <DependentUpon>EditorGenerico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\CErrorQuery.cs" />
+    <Compile Include="Editor\FormEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\FormEditor.Designer.cs">
+      <DependentUpon>FormEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\FormResultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\FormResultados.Designer.cs">
+      <DependentUpon>FormResultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\FormVerError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\FormVerError.Designer.cs">
+      <DependentUpon>FormVerError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\SearchAndReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\SearchAndReplace.Designer.cs">
+      <DependentUpon>SearchAndReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\SQLFoldingStrategy.cs" />
+    <Compile Include="Editor\TextEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editor\TextEdit.Designer.cs">
+      <DependentUpon>TextEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AsisBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\AsisBase.Designer.cs">
+      <DependentUpon>AsisBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AsisSelCampos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\AsisSelCampos.Designer.cs">
+      <DependentUpon>AsisSelCampos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AsisSelTipo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\AsisSelTipo.Designer.cs">
+      <DependentUpon>AsisSelTipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AsistInicio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\AsistInicio.Designer.cs">
+      <DependentUpon>AsistInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AsisTipoEjecucion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\AsisTipoEjecucion.Designer.cs">
+      <DependentUpon>AsisTipoEjecucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AsisTipoRetorno.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\AsisTipoRetorno.Designer.cs">
+      <DependentUpon>AsisTipoRetorno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ForEditTabla.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\ForEditTabla.Designer.cs">
+      <DependentUpon>ForEditTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormPortada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormPortada.Designer.cs">
+      <DependentUpon>FormPortada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generador_Excel.cs" />
+    <Compile Include="AdministrarConexiones\FormAdminConexiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministrarConexiones\FormAdminConexiones.Designer.cs">
+      <DependentUpon>FormAdminConexiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormBuscar.Designer.cs">
+      <DependentUpon>FormBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormBuscarTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormBuscarTabla.Designer.cs">
+      <DependentUpon>FormBuscarTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCompararBases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCompararBases.Designer.cs">
+      <DependentUpon>FormCompararBases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarConexiones\FormConexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministrarConexiones\FormConexion.Designer.cs">
+      <DependentUpon>FormConexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormConfColores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormConfColores.Designer.cs">
+      <DependentUpon>FormConfColores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCrearDiccionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCrearDiccionario.Designer.cs">
+      <DependentUpon>FormCrearDiccionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormDataGridCampo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormDataGridCampo.Designer.cs">
+      <DependentUpon>FormDataGridCampo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormDependecias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormDependecias.Designer.cs">
+      <DependentUpon>FormDependecias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormDocumentar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormDocumentar.Designer.cs">
+      <DependentUpon>FormDocumentar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormFK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormFK.Designer.cs">
+      <DependentUpon>FormFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormLLenarDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormLLenarDataGrid.Designer.cs">
+      <DependentUpon>FormLLenarDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormMenuContextual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormMenuContextual.Designer.cs">
+      <DependentUpon>FormMenuContextual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormModelDominio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormModelDominio.Designer.cs">
+      <DependentUpon>FormModelDominio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormParametroManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormParametroManual.Designer.cs">
+      <DependentUpon>FormParametroManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormProcedimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormProcedimiento.Designer.cs">
+      <DependentUpon>FormProcedimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormSP.Designer.cs">
+      <DependentUpon>FormSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormTabla.Designer.cs">
+      <DependentUpon>FormTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormTablasDominio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormTablasDominio.Designer.cs">
+      <DependentUpon>FormTablasDominio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormTrasar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormTrasar.Designer.cs">
+      <DependentUpon>FormTrasar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormVerClase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormVerClase.Designer.cs">
+      <DependentUpon>FormVerClase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormVerTodasLasDependencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormVerTodasLasDependencias.Designer.cs">
+      <DependentUpon>FormVerTodasLasDependencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globales.cs" />
+    <Compile Include="Inportador\CColumna.cs" />
+    <Compile Include="Inportador\CImpBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inportador\CImpBase.Designer.cs">
+      <DependentUpon>CImpBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inportador\CImpExell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inportador\CImpExell.Designer.cs">
+      <DependentUpon>CImpExell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inportador\CImpTablasSql.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inportador\CImpTablasSql.Designer.cs">
+      <DependentUpon>CImpTablasSql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inportador\CImpTextoSeparado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inportador\CImpTextoSeparado.Designer.cs">
+      <DependentUpon>CImpTextoSeparado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inportador\FilaXLS.cs" />
+    <Compile Include="Inportador\FormImportar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inportador\FormImportar.Designer.cs">
+      <DependentUpon>FormImportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inteliences\AutoCompleteWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inteliences\AutoCompleteWindow.Designer.cs">
+      <DependentUpon>AutoCompleteWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inteliences\CObjetoInteliences.cs" />
+    <Compile Include="inteliences\IDataBaseChild.cs" />
+    <Compile Include="inteliences\Inteliences.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="inteliences\Inteliences.Designer.cs">
+      <DependentUpon>Inteliences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inteliences\Variables.cs" />
+    <Compile Include="ModeloDB\CampoTabla.cs" />
+    <Compile Include="ModeloDB\DBObjeto.cs" />
+    <Compile Include="ModeloDB\DetalleFK.cs" />
+    <Compile Include="ModeloDB\Funcion.cs" />
+    <Compile Include="ModeloDB\LLAveForanea.cs" />
+    <Compile Include="ModeloDB\ModeloDB.cs" />
+    <Compile Include="ModeloDB\ObjetoCodigoFuente.cs" />
+    <Compile Include="ModeloDB\Parametro.cs" />
+    <Compile Include="ModeloDB\ProcedimientoAlmacenado.cs" />
+    <Compile Include="ModeloDB\Restriccion.cs" />
+    <Compile Include="ModeloDB\Tabala.cs" />
+    <Compile Include="ModeloDB\Trigger.cs" />
+    <Compile Include="ModeloDB\Unico.cs" />
+    <Compile Include="ModeloDB\Vista.cs" />
+    <Compile Include="Objetos\CAlias.cs" />
+    <Compile Include="Objetos\CCampoFK.cs" />
+    <Compile Include="Objetos\CCaso.cs" />
+    <Compile Include="Objetos\CConvertidor.cs" />
+    <Compile Include="Objetos\CDato.cs" />
+    <Compile Include="Objetos\CDefault.cs" />
+    <Compile Include="Objetos\CDefinicionDetalleFK.cs" />
+    <Compile Include="Objetos\CDefinicionFK.cs" />
+    <Compile Include="Objetos\CDefinicionTabla.cs" />
+    <Compile Include="Objetos\CDependencia.cs" />
+    <Compile Include="Objetos\CDefinicionCampo.cs" />
+    <Compile Include="Objetos\CDiferenciaObjeto.cs" />
+    <Compile Include="Objetos\CIdentity.cs" />
+    <Compile Include="Objetos\CLLaveForanea.cs" />
+    <Compile Include="Objetos\CNodoBuscar.cs" />
+    <Compile Include="Objetos\CParametro.cs" />
+    <Compile Include="Objetos\CRelacion.cs" />
+    <Compile Include="Objetos\CRestaurar.cs" />
+    <Compile Include="Objetos\CSysObject.cs" />
+    <Compile Include="Objetos\CTablaVariable.cs" />
+    <Compile Include="Objetos\CTipoDato.cs" />
+    <Compile Include="Objetos\CUnico.cs" />
+    <Compile Include="patrones\FormAdminPatrones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patrones\FormAdminPatrones.Designer.cs">
+      <DependentUpon>FormAdminPatrones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patrones\FormPatron.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patrones\FormPatron.Designer.cs">
+      <DependentUpon>FormPatron.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patrones\FormSelPatron.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patrones\FormSelPatron.Designer.cs">
+      <DependentUpon>FormSelPatron.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoreProcedure\AsistenteInsert\ContenedorAsistente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StoreProcedure\AsistenteInsert\ContenedorAsistente.Designer.cs">
+      <DependentUpon>ContenedorAsistente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreProcedure\AsistenteInsert\FormAsistenteIntert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreProcedure\AsistenteInsert\FormAsistenteIntert.Designer.cs">
+      <DependentUpon>FormAsistenteIntert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablaComponentes\ContenedorGrupo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TablaComponentes\ContenedorGrupo.Designer.cs">
+      <DependentUpon>ContenedorGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablaComponentes\OpcionBoton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TablaComponentes\OpcionBoton.Designer.cs">
+      <DependentUpon>OpcionBoton.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdministrarConexiones\AdministradorDeGrupos.resx">
+      <DependentUpon>AdministradorDeGrupos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministrarConexiones\FileConecction.resx">
+      <DependentUpon>FileConecction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministrarConexiones\FormGrupo.resx">
+      <DependentUpon>FormGrupo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministrarConexiones\IControladorConexion.resx">
+      <DependentUpon>IControladorConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministrarConexiones\MySQLControladorConexion.resx">
+      <DependentUpon>MySQLControladorConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministrarConexiones\SQLControladorConexion.resx">
+      <DependentUpon>SQLControladorConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimatedWaitTextBox.resx">
+      <DependentUpon>AnimatedWaitTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisBienVenidaDelete.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisBienVenidaDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisBienVenidaInsert.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisBienVenidaInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisBienVenidaUpdate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisBienVenidaUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisForeigKeys.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisForeigKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisGenLLave.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisGenLLave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisNombreSP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisNombreSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisOrdenamiento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisOrdenamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisResDelete.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisResDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisResInsert.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisResInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisResSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisResSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisResUpdate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisResUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisSelCampos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisSelCampos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisSelParametros.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisSelParametros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisSelTabla.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisSelTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisSelValFijos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisSelValFijos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsistBaseSP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsistBaseSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\FormAsistSP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAsistSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\FormCasos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCasos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\FormForeigKey.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormForeigKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\FormNuevoCampo.resx">
+      <DependentUpon>FormNuevoCampo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\FormPropCampo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPropCampo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\FormPropCaso.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPropCaso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\FormPropFiltro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPropFiltro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\FormPropFkDelete.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPropFkDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\FormpropOrdenamiento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormpropOrdenamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\FormPropParametro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPropParametro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\FormPropParametro2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPropParametro2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\FormPropValFijos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPropValFijos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComparadorCadenas\ComparadorCadenas.resx">
+      <DependentUpon>ComparadorCadenas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\CCampoRelacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CCampoRelacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\CCampoTabla.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CCampoTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\CRelacionTabla.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CRelacionTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\CTabla.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistSps\AsisBienVenidaSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisBienVenidaSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearTablas\FormCrearTabla.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCrearTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearTablas\FormEditorTabla.resx">
+      <DependentUpon>FormEditorTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearTablas\FormFK.resx">
+      <DependentUpon>FormFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearTablas\FormPrimaryKey.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPrimaryKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearTablas\FormRelaciones.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormRelaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearTablas\FormSeleccionarCampos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSeleccionarCampos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearTablas\FormPropiedadesCampo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPropiedadesCampo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearTablas\FormUnicos.resx">
+      <DependentUpon>FormUnicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagramas\CDIagramas.resx">
+      <DependentUpon>CDIagramas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagramas\FormDiagrama.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDiagrama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentador\FormExportarDocuemntacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormExportarDocuemntacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\FormEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\FormResultados.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormResultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\FormVerError.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormVerError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\SearchAndReplace.resx">
+      <DependentUpon>SearchAndReplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\TextEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TextEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AboutBox1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AsisSelCampos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisSelCampos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AsistInicio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsistInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AsisTipoRetorno.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsisTipoRetorno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministrarConexiones\FormAdminConexiones.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAdminConexiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ForEditTabla.resx">
+      <DependentUpon>ForEditTabla.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormBuscar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormBuscarTabla.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBuscarTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCompararBases.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCompararBases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministrarConexiones\FormConexion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormConfColores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormConfColores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCrearDiccionario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCrearDiccionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormDataGridCampo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDataGridCampo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormDependecias.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDependecias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormDocumentar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDocumentar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormFK.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormLLenarDataGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormLLenarDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormMenuContextual.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMenuContextual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormModelDominio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormModelDominio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormParametroManual.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormParametroManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormPortada.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPortada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormProcedimiento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormProcedimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormSP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormTabla.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormTablasDominio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTablasDominio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormTrasar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTrasar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormVerClase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormVerClase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormVerTodasLasDependencias.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormVerTodasLasDependencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inportador\CImpBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CImpBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inportador\CImpExell.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CImpExell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inportador\CImpTablasSql.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CImpTablasSql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inportador\CImpTextoSeparado.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CImpTextoSeparado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inportador\FormImportar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormImportar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inteliences\Inteliences.resx">
+      <DependentUpon>Inteliences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patrones\FormAdminPatrones.resx">
+      <DependentUpon>FormAdminPatrones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patrones\FormPatron.resx">
+      <DependentUpon>FormPatron.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patrones\FormSelPatron.resx">
+      <DependentUpon>FormSelPatron.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StoreProcedure\AsistenteInsert\ContenedorAsistente.resx">
+      <DependentUpon>ContenedorAsistente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreProcedure\AsistenteInsert\FormAsistenteIntert.resx">
+      <DependentUpon>FormAsistenteIntert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablaComponentes\ContenedorGrupo.resx">
+      <DependentUpon>ContenedorGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablaComponentes\OpcionBoton.resx">
+      <DependentUpon>OpcionBoton.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copia de Access_0662.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copia %282%29 de Access_066.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkOk.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\Visor_sql_2005.CrearTablas.FormRelaciones.datasource" />
+    <None Include="Properties\DataSources\Visor_sql_2005.Objetos.CCampoFK.datasource" />
+    <None Include="Resources\CheckX.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil_221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

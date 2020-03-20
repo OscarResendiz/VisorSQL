@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Visor sql 2008">
+</Property><Property Name="Solution File" Value="D:\PROYECTOS\PROYECTOS NET  2010\VISOR SQL 2010\Programa\Visor sql 2008\Visor sql 2008.sln">
+</Property><Property Name="Date" Value="viernes, 26 de noviembre de 2010">
+</Property><Property Name="Time" Value="12:24 p.m.">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="4" Project="Visor sql 2008" Source="http://go.microsoft.com/fwlink/?LinkId=159919" Description="Warning: this project requires Crystal Reports, which is no longer included with Visual Studio. Please click here for more information.">
+</Event><Event ErrorLevel="1" Project="Visor sql 2008" Source="Visor sql 2008.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="Visor sql 2008" Source="Visor sql 2008.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Visor sql 2008" Source="Visor sql 2008.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Visor sql 2008.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Visor sql 2008.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Visor sql 2008" Source="Visor sql 2008.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
